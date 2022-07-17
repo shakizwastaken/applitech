@@ -1,0 +1,19 @@
+@tailwind components;
+
+@layer components {
+  .aboutUs {
+    @apply bg-accent text-white text-left  min-h-[50vh];
+  }
+
+  .aboutUs_container {
+    @apply flex flex-col lg:flex-row justify-center items-center my-20 gap-20;
+  }
+
+  .aboutUs_container > h1 {
+    @apply text-5xl lg:text-7xl font-bold text-center lg:text-left;
+  }
+
+  .aboutUs_container > p {
+    @apply font-semibold lg:text-xl px-10 lg:px-0 text-center lg:text-left;
+  }
+}

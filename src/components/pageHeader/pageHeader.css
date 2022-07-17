@@ -1,0 +1,7 @@
+@tailwind components;
+
+@layer components {
+  .pageHeader_container {
+    @apply px-10 lg:px-0 text-5xl lg:text-7xl text-main font-black flex justify-start items-center h-[25vh];
+  }
+}

@@ -1,0 +1,42 @@
+@tailwind components;
+
+@layer components {
+  .footer_section {
+    @apply bg-main text-white;
+  }
+  .footer_container {
+    @apply flex flex-col lg:flex-row text-center lg:text-left justify-between items-center py-10;
+  }
+
+  .footer_container > * {
+    @apply max-w-[50%];
+  }
+
+  .footer_info {
+    @apply flex flex-col justify-center items-start gap-4 text-2xl font-bold;
+  }
+
+  .footer_callUs {
+    @apply flex flex-col items-center justify-center;
+  }
+
+  .footer_callUs_logoContainer {
+    @apply flex justify-center items-center w-[450px] h-[350px] overflow-hidden;
+  }
+
+  .footer_callUs_logoContainer > img {
+    @apply w-[350px] lg:w-[450px];
+  }
+
+  .footer_callUs_cta {
+    @apply flex flex-col justify-center items-center text-2xl font-bold gap-10;
+  }
+
+  .footer_callUs_cta > h1 {
+    @apply text-5xl font-extrabold;
+  }
+
+  .btn-footer_cta {
+    @apply w-[250px] text-lg hover:bg-main;
+  }
+}

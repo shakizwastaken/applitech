@@ -1,0 +1,23 @@
+@tailwind components;
+
+@layer components {
+  .achievements_container {
+    @apply gap-10 flex flex-col justify-center items-center;
+  }
+
+  .achievement_item {
+    @apply flex flex-col lg:flex-row justify-center lg:justify-between items-center w-[95vw] lg:w-full gap-10;
+  }
+
+  .achievement_item > img {
+    @apply w-[350px];
+  }
+
+  .achievement_item_info {
+    @apply text-main text-center lg:text-left;
+  }
+
+  .achievement_item_info > h1 {
+    @apply text-4xl font-bold;
+  }
+}

@@ -1,0 +1,59 @@
+@tailwind components;
+
+@layer components {
+  .nav {
+    @apply sticky top-0 w-screen h-[125px] bg-white select-none;
+  }
+
+  .nav.nav_scrolled {
+    @apply shadow-lg;
+  }
+
+  .nav_container {
+    @apply flex justify-between items-center flex-wrap px-10 lg:px-0;
+  }
+
+  .nav_logo {
+    @apply md:w-[250px] w-[150px] cursor-pointer;
+  }
+
+  .nav_links {
+    @apply flex-wrap items-center gap-10 hidden lg:flex;
+  }
+
+  .nav_link {
+    @apply text-main font-semibold cursor-pointer hover:text-accent;
+  }
+
+  .nav_link_active {
+    @apply text-accent;
+  }
+
+  .btn-nav_contact {
+    @apply hidden lg:block;
+  }
+
+  .nav_bars {
+    @apply lg:hidden text-2xl cursor-pointer;
+  }
+
+  .nav_menu {
+    @apply w-screen h-screen fixed top-0 left-0 bg-main flex justify-center items-center overflow-hidden;
+  }
+
+  .nav_menu_close {
+    @apply w-[25px] h-[25px] text-white fixed top-[50px] left-[50px];
+  }
+
+  .nav_menu_navLinks {
+    @apply flex flex-col justify-center items-center gap-10;
+  }
+
+  .nav_menu_navLinks .nav_link {
+    @apply text-white;
+  }
+
+  .nav_menu_navLinks .nav_link_active {
+    @apply text-accent;
+  }
+}

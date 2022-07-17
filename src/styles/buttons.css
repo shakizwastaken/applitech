@@ -1,0 +1,23 @@
+@tailwind components;
+
+@layer components {
+  .btn {
+    @apply flex justify-center items-center px-3 py-2 rounded-full font-semibold border-solid border-[3px] outline-none;
+  }
+
+  .btn-fillMain {
+    @apply bg-main text-white hover:bg-white hover:border-main hover:text-main;
+  }
+
+  .btn-borderMain {
+    @apply bg-white text-main  border-main hover:text-white hover:bg-main;
+  }
+
+  .btn-fillAccent {
+    @apply bg-accent text-white hover:bg-white  border-accent hover:text-accent;
+  }
+
+  .btn-borderAccent {
+    @apply bg-white text-accent  border-accent hover:text-white hover:bg-accent;
+  }
+}

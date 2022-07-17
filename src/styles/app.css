@@ -1,0 +1,7 @@
+@tailwind components;
+
+@layer components {
+  .app {
+    @apply min-h-screen w-screen overflow-x-hidden;
+  }
+}

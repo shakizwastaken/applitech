@@ -1,0 +1,18 @@
+@tailwind components;
+
+@layer components {
+  .activities_container {
+    @apply flex justify-center items-center flex-wrap gap-20;
+  }
+  .activities_item {
+    @apply w-[90vw] lg:w-[500px] h-[450px] lg:h-[400px] px-10  flex flex-col justify-center items-center gap-5 text-main bg-light rounded-[25px];
+  }
+
+  .activities_item > h1 {
+    @apply font-bold text-4xl text-left w-[90%];
+  }
+
+  .activities_item > p {
+    @apply text-center text-base w-[90%];
+  }
+}

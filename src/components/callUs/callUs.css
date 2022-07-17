@@ -1,0 +1,22 @@
+@tailwind components;
+
+@layer components {
+  .callUs {
+    @apply min-h-[50vh] my-[50px] w-screen bg-main text-white;
+  }
+
+  .callUs_container {
+    @apply flex flex-col justify-center items-start gap-10 px-10 lg:px-10 py-10 lg:py-10;
+  }
+
+  .callUs_container > h1 {
+    @apply text-2xl lg:text-6xl font-bold;
+  }
+  .callUs_container > p {
+    @apply text-xl lg:text-3xl w-[65%];
+  }
+
+  .btn-callUs_section {
+    @apply hover:bg-main;
+  }
+}
